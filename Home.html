@@ -11,12 +11,18 @@
  <form action="/action_page.php">	
   Subscribe to our email list: 
   <input type="text" name="email" value="Enter email address"><br>
-  <input type="button" onclick="myFunction()" value="Submit">
+  <input type="button" onclick="verifyEmail(email)" value="Submit">
 </form> 
   <h2>Navigate</h2>
   <p>About</p>
   <p>Hackathons</p>
   <p>Our Members</p>
+
+<script>
+function verifyEmail(email) {
+    document.getElementById("email").submit();
+}
+</script>
 
 </body>
 </html> 
